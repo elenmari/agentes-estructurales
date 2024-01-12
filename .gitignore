@@ -1,0 +1,16 @@
+
+/pdf
+/.vscode
+/tmp
+/venv
+
+*.tmp.*
+*.pdf
+*.env
+
+/__pycache__
+*.pyc
+
+/dump
+/.vscode
+/venv
