@@ -1,6 +1,13 @@
 #!/bin/bash
 
-source venv/Scripts/activate
+os_type=$(uname -s)
+
+if [ "$os_type" = "Linux" ]; then
+    source ./venv/bin/activate
+    echo "> Activated source for $os_type"
+else
+    source ./venv/Scripts/activate
+fi
 
 # Source the .env file to get the SSH key file path
 if [ -f .env ]; then
